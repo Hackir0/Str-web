@@ -1,0 +1,75 @@
+body {
+    background-color: #cf9c9c; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 1440px; 
+    margin: 0 auto; 
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+
+.film-img {
+    width: 300px;
+    height: 300px; 
+    border-radius: 15px; 
+    margin: 10px;
+}
+
+
+a {
+    color: black; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+table {
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+th, td {
+    padding: 10px; 
+    text-align: left;
+}
+
+
+@font-face {
+    font-family: 'FilmFont1';
+    src: url('fonts/font1.ttf');
+}
+
+@font-face {
+    font-family: 'FilmFont2';
+    src: url('fonts/font2.ttf'); 
+}
+
+@font-face {
+    font-family: 'FilmFont3';
+    src: url('fonts/font3.otf'); 
+}
+
+
+
+h3#inception + p {
+    font-family: 'FilmFont1' !important; 
+}
+
+h3#matrix + p {
+    font-family: 'FilmFont2' !important; 
+}
+
+h3#interstellar + p {
+    font-family: 'FilmFont3' !important;
+}
+
+
