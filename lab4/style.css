@@ -1,0 +1,104 @@
+html {
+    font-family: sans-serif;
+  }
+
+body {
+  margin: 0;
+}
+.button {
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+    animation: vibrate 0.1s infinite;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+@keyframes tack2{
+    
+}
+.button:hover {
+    animation-play-state: paused;
+    background-color: red;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+.animated-link {
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.animated-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: green;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.animated-link:hover{
+    color: green;
+}
+.animated-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+.ball {
+    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    animation: bounce 5s ease-in infinite;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        transform: scale(1, 1);
+    }
+    40% {
+        top: 500px; /* Максимальная высота падения */
+        transform: scale(1.2, 0.8); /* Деформация при ударе */
+    }
+    60% {
+        top: 250px; /* Первый отскок на половину высоты */
+        transform: scale(0.9, 1.1); /* Легкая деформация вверх */
+    }
+    80% {
+        top: 500px; /* Второе падение снова */
+        transform: scale(1.15, 0.85); /* Упругая деформация */
+    }
+    90% {
+        top: 375px; /* Второй отскок на половину от предыдущего */
+        transform: scale(1, 1); /* Возвращение в нормальную форму */
+    }
+    100% {
+        top: 500px; /* Последний отскок перед остановкой */
+        transform: scale(1, 1);
+    }
+}
