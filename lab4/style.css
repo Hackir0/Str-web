@@ -19,9 +19,7 @@ body {
     75% { transform: translateX(-3px); }
     100% { transform: translateX(0); }
 }
-@keyframes tack2{
-    
-}
+
 .button:hover {
     animation-play-state: paused;
     background-color: red;
@@ -82,23 +80,23 @@ h1 {
         transform: scale(1, 1);
     }
     40% {
-        top: 500px; /* Максимальная высота падения */
-        transform: scale(1.2, 0.8); /* Деформация при ударе */
+        top: 500px; 
+        transform: scale(1.2, 0.8); 
     }
     60% {
-        top: 250px; /* Первый отскок на половину высоты */
-        transform: scale(0.9, 1.1); /* Легкая деформация вверх */
+        top: 250px; 
+        transform: scale(0.9, 1.1); 
     }
     80% {
-        top: 500px; /* Второе падение снова */
-        transform: scale(1.15, 0.85); /* Упругая деформация */
+        top: 500px; 
+        transform: scale(1.15, 0.85); 
     }
     90% {
-        top: 375px; /* Второй отскок на половину от предыдущего */
-        transform: scale(1, 1); /* Возвращение в нормальную форму */
+        top: 375px; 
+        transform: scale(1, 1); 
     }
     100% {
-        top: 500px; /* Последний отскок перед остановкой */
+        top: 500px; 
         transform: scale(1, 1);
     }
 }
