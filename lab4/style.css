@@ -9,7 +9,7 @@ body {
     margin: 50px;
     font-size: 20px;
     background-color: red;
-    animation: vibrate 0.1s infinite;
+    animation: vibrate 1s infinite;
 }
 
 @keyframes vibrate {
