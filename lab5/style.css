@@ -42,6 +42,7 @@ html {
   .flex-group-5 {
     display: flex;
     flex-direction: column;
+    order: 1;
   }
   
   .flex-group-3, .flex-group-4 {
